@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url("images/back.jpg");
+    background-size: cover;
+}
+.card {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: height 0.6s ease-in-out;
+}
+.search {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input {
+    outline: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 10px;
+    flex: 1;
+    font-size: 18px;
+}
+.search input::placeholder {
+    color: #fff;
+}
+.search button {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.search button img {
+    width: 16px;
+}
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin: -10px;
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather {
+    visibility: hidden;
+}
+.weather.active {
+    visibility: visible;
+}
+.error {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: none;
+}
+.error img{
+    margin-top: 20px;
+    width: 300px;
+}
+.error.active {
+    display: block;
+    color: rebeccapurple;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    color: #fff;
+}
